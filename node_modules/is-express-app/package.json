@@ -1,0 +1,39 @@
+{
+  "name": "is-express-app",
+  "version": "4.0.0",
+  "description": "Function to check if the argument is an instance created by express (with express())",
+  "keywords": [
+    "express",
+    "app",
+    "is express app",
+    "node"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/matt-hahn/is-express-app.git",
+  "author": "Matt Hahn <matt.hahn@matthahndesign.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "NODE_ENV=test mocha test/app.js src/**/**.test.js",
+    "test:watch": "NODE_ENV=test mocha --watch --recursive test/app.js src/**/**.test.js",
+    "test:lint": "npm run eslint && npm test",
+    "eslint": "eslint src/**"
+  },
+  "dependencies": {
+    "express-api-methods": "^1.0.3",
+    "if-defined": "^1.0.16",
+    "is-function": "^1.0.1",
+    "is-node-emitter": "^1.0.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.4.0",
+    "express": "^4.16.2",
+    "mocha": "^4.1.0",
+    "prettier": "^1.10.2"
+  }
+}
